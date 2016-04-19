@@ -29,9 +29,8 @@
 
 5. Download a `.pem` key from AWS 
 6. Move the `.pem` file to an appropriate file on your system 
-7. Change user permission on `.pem` `chmod 400 {{mypem}}.pem`
+7. **Mac/Linux only** Change user permission on `.pem` `chmod 400 {{mypem}}.pem`
 
-### For PCs that command might require kitty or putty or bash terminal
 We are now ready to enter the cloud server!
 
 ## Part 3: Enter cloud server
@@ -39,7 +38,8 @@ We are now ready to enter the cloud server!
 
 (you can use the 'connect' button on Amazon AWS to get the next line of code)
 
-### For PCs the command below might require kitty or putty or bash terminal
+**For PCs, be sure to enter the command below in the bash terminal, *not* the standard command prompt**
+
 1. `ssh -i {{mypem}}.pem ubuntu@{{yourAWS.ip}}` again you can get this exact line of code from <button> Connect </button> on AWS. (The command is found below **example**). 
 2. In the ubuntu terminal: These establish some basic dependencies for deployment and the Linux server.
   
