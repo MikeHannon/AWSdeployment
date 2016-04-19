@@ -103,6 +103,7 @@ We are now ready to enter the cloud server!
   ```
   server {
       listen 80;
+      # server_name www.yourdomainname.buzz;  UNCOMMENT THIS LINE IF USING YOUR OWN DOMAIN
       location / {
           proxy_pass http://{{PRIVATE-IP}}:8000;
           proxy_http_version 1.1;
