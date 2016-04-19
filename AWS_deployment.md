@@ -74,23 +74,18 @@ We are now ready to enter the cloud server!
   
 7. Make your file folder:
   
-  ```
-  sudo mkdir /var/www
-  ```
+  `sudo mkdir /var/www`
   
 8. Enter the folder:
   
-  ```
-  cd /var/www
-  ```
+  `cd /var/www`
   
 9. Clone your project:
   
-  ```
-  sudo git clone {{your project file path on github/bitbucket}}
-  ```
+  `sudo git clone {{your project file path on github/bitbucket}}`
   
-#### At this point you should be able to change directories into your project and run your server.  It will most likely fail, because of not having mongod up and running, but running the project should be as simple as `node server.js` or a similar command like `npm start`.
+**At this point you should be able to change directories into your project and run your server.  It will most likely fail, because of not having mongod up and running, but running the project should be as simple as `node server.js` or a similar command like `npm start`.**
+
 ## Part 4: Set up NGINX
 1. Go to nginx's sites-available directory  :
 
@@ -100,7 +95,9 @@ We are now ready to enter the cloud server!
 
   `sudo vim {{pname}}`
 
-  ### vim is a terminal based text editor for more info see: vim-adventures.com/ or other vim learning tools.  The key commands for us are **i** which allows us to type, **esc** which turns off insert and then after **esc** **:wq** which says write and quit.
+  **vim is a terminal based text editor for more info see: vim-adventures.com/ or other vim learning tools.  The key commands for us are `i` which allows us to type, `esc` which turns off insert and then after `esc` `:wq` which says write and quit.**  
+  
+  Instead of vim, you can also use nano (`sudo nano {{pname}}`).  vim has many additional commands and features that make it a very powerful editing tool, whereas nano is a very basic, stripped-down editor, but we aren't doing anything too complicated anyway.
 3. Paste and modify the following code into vim after hitting i:
 
   ```
