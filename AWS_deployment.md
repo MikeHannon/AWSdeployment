@@ -27,9 +27,9 @@
 
   `https 0.0.0.0 (Anywhere, or don't set it)` 
 
-5. Download a `.pem` key from AWS 
-6. Move the `.pem` file to an appropriate file on your system 
-7. **Mac/Linux only** Change user permission on `.pem` `chmod 400 {{mypem}}.pem`
+5. Download a .pem key from AWS 
+6. Move the .pem file to an appropriate file on your system 
+7. **Mac/Linux only** Change user permission on .pem `chmod 400 {{mypem}}.pem`
 
 We are now ready to enter the cloud server!
 
@@ -149,7 +149,7 @@ We are now ready to enter the cloud server!
 
 3. You might have some components that you still need to install: (get your dependencies from npm (assuming your git project has a package.json))
 
-  `npm install`
+  `sudo npm install`
 
   * IF USING BOWER (assuming you have a bower.json)
 
