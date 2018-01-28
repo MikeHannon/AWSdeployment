@@ -1,4 +1,4 @@
-# AWS Deployment
+# AWS MEAN Deployment
 ## Part 1: Get prepared
 ### Core Setup Requirements
 1. An AWS account 
